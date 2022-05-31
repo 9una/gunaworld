@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import "./variables";
+@import "./mixins";
+@import "./main.scss";
+@import "./layout.scss";
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,
+body {
+    width:100%;
+    font-size:11px;
+    letter-spacing: -0.04em;
+}
+
+
+// media query
+@include desktop {
+    
+}
+@include laptop {
+    
+}
+@include tablet {
+    
+}
+@include mobile {
+    
+}

@@ -1,0 +1,271 @@
+#container.home .wrapper {
+  display: flex;
+  height: 100%;
+}
+#container.home .wrapper > div,
+#container.home .wrapper > main {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 100%;
+  padding: 20px;
+}
+#container.home #profile {
+  width: 30%;
+  margin-right: 5px;
+}
+#container.home #main {
+  width: calc(70% - 5px);
+}
+
+#profile .img {
+  width: 100%;
+  padding-bottom: 90%;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+#profile .img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#profile .state {
+  padding-top: 15px;
+}
+#profile .state .state-today {
+  width: 100%;
+  padding: 6px 0 7px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #999;
+  font-weight: bold;
+}
+#profile .state .state-today span {
+  color: #1e9ab2;
+  margin-right: 3px;
+}
+#profile .state .state-text {
+  width: 100%;
+  height: 100px;
+  padding: 10px 8px;
+}
+#profile .state .state-text p {
+  line-height: 1.4;
+}
+#profile .state .state-history {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+}
+#profile .state .state-history span {
+  font-weight: bold;
+}
+#profile .state .state-history span::before {
+  content: "> ";
+  color: rgb(255, 111, 0);
+}
+#profile .state .state-history button {
+  font-size: 8px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #666;
+}
+#profile .state .state-history button.arrow-bottom {
+  margin-left: auto;
+}
+#profile .name {
+  padding: 12px 0 35px;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(5, 5, 117);
+}
+#profile .friend {
+  border: 1px solid #999;
+  border-radius: 0 3px 3px 3px;
+  position: relative;
+  padding: 6px 4px 3px;
+}
+#profile .friend span {
+  border: 1px solid #999;
+  border-bottom: 0;
+  background: #fff;
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 3px 3px 0 0;
+  position: absolute;
+  top: -18px;
+  left: -1px;
+  font-weight: bold;
+  color: #444;
+  font-size: 11px;
+}
+#profile .friend select {
+  width: 100%;
+  background: #bcd4f0;
+  padding: 4px 2px 3px;
+  border-color: #999;
+  font-size: 11px;
+}
+
+#wrap {
+  width: 1024px;
+  height: 600px;
+  padding: 20px;
+  background: url("../img/bg/bg_pattern.png") repeat center;
+  display: flex;
+}
+
+#container {
+  width: 784px;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+  background: #5ec6e2;
+  padding: 60px 38px;
+  padding-right: 35px;
+  z-index: 1;
+}
+#container::before {
+  content: "";
+  display: block;
+  width: 724px;
+  height: calc(100% - 60px);
+  background: #fff;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  border-radius: 8px;
+  border: 2px solid #555;
+}
+#container > div, #container > main, #container > nav {
+  position: relative;
+  z-index: 10;
+}
+#container .wrapper {
+  width: 100%;
+  position: relative;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+#header .h-count {
+  width: 30%;
+  font-size: 10px;
+  text-align: center;
+}
+#header .h-count span {
+  font-weight: bold;
+}
+#header .h-count span b {
+  margin-left: 5px;
+}
+#header .h-count .count-today::after {
+  content: "";
+  width: 1px;
+  height: 8px;
+  background: black;
+  display: inline-block;
+  margin: 0 8px 0 10px;
+}
+#header .h-count .count-today b {
+  color: red;
+}
+#header .h-title {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+#header .h-title .title-text {
+  font-size: 14px;
+  color: #1e9ab2;
+}
+#header .h-title .link {
+  color: #666;
+}
+
+nav {
+  width: 50px;
+  position: absolute;
+  right: -49px;
+  top: 10px;
+}
+nav li {
+  margin-bottom: 2px;
+}
+nav li a {
+  font-size: 12px;
+  display: block;
+  background: #1e9ab2;
+  border-radius: 0 5px 5px 0;
+  padding: 8px 5px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid black;
+  font-weight: bold;
+}
+nav li.active a {
+  background: #fff;
+  border-left: 1px solid #fff;
+  color: #000;
+}
+
+#sideBox {
+  margin-left: auto;
+  width: 180px;
+}
+#sideBox > span, #sideBox > div {
+  width: 100%;
+  border-radius: 3px;
+  padding: 8px;
+}
+#sideBox .side-title {
+  display: inline-block;
+  background: #5d5d5d;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #3f3e3e;
+}
+#sideBox .side-box {
+  background: #fff;
+  margin: 5px 0;
+}
+#sideBox .side-box > div:not(:last-child) {
+  border-bottom: 1px dotted #999;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+#sideBox .side-box label {
+  display: inline-block;
+  width: 55px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#sideBox .side-box progress {
+  margin-left: auto;
+  width: 100px;
+  height: 13px;
+}
+#sideBox .music-player {
+  background: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 11px;
+  letter-spacing: -0.04em;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,110 @@
+#container.home .wrapper {
+  display: flex;
+  height: 100%;
+}
+#container.home .wrapper > div,
+#container.home .wrapper > main {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 100%;
+  padding: 20px;
+}
+#container.home #profile {
+  width: 30%;
+  margin-right: 5px;
+}
+#container.home #main {
+  width: calc(70% - 5px);
+}
+
+#profile .img {
+  width: 100%;
+  padding-bottom: 90%;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+#profile .img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#profile .state {
+  padding-top: 15px;
+}
+#profile .state .state-today {
+  width: 100%;
+  padding: 6px 0 7px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #999;
+  font-weight: bold;
+}
+#profile .state .state-today span {
+  color: #1e9ab2;
+  margin-right: 3px;
+}
+#profile .state .state-text {
+  width: 100%;
+  height: 100px;
+  padding: 10px 8px;
+}
+#profile .state .state-text p {
+  line-height: 1.4;
+}
+#profile .state .state-history {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+}
+#profile .state .state-history span {
+  font-weight: bold;
+}
+#profile .state .state-history span::before {
+  content: "> ";
+  color: rgb(255, 111, 0);
+}
+#profile .state .state-history button {
+  font-size: 8px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #666;
+}
+#profile .state .state-history button.arrow-bottom {
+  margin-left: auto;
+}
+#profile .name {
+  padding: 12px 0 35px;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(5, 5, 117);
+}
+#profile .friend {
+  border: 1px solid #999;
+  border-radius: 0 3px 3px 3px;
+  position: relative;
+  padding: 6px 4px 3px;
+}
+#profile .friend span {
+  border: 1px solid #999;
+  border-bottom: 0;
+  background: #fff;
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 3px 3px 0 0;
+  position: absolute;
+  top: -18px;
+  left: -1px;
+  font-weight: bold;
+  color: #444;
+  font-size: 11px;
+}
+#profile .friend select {
+  width: 100%;
+  background: #bcd4f0;
+  padding: 4px 2px 3px;
+  border-color: #999;
+  font-size: 11px;
+}
+
+/*# sourceMappingURL=main.css.map */
