@@ -11,7 +11,7 @@
 }
 #container.home #profile {
   width: 30%;
-  margin-right: 5px;
+  margin-right: 6px;
 }
 #container.home #main {
   width: calc(70% - 5px);
@@ -39,6 +39,7 @@
   border-radius: 5px;
   border: 1px solid #999;
   font-weight: bold;
+  font-size: 10px;
 }
 #profile .state .state-today span {
   color: #1e9ab2;
