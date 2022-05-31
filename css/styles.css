@@ -7,7 +7,7 @@
   border: 1px solid black;
   border-radius: 5px;
   height: 100%;
-  padding: 20px;
+  padding: 23px 20px 20px;
 }
 #container.home #profile {
   width: 30%;
@@ -117,7 +117,7 @@
 }
 
 #container {
-  width: 784px;
+  width: 780px;
   height: 100%;
   position: relative;
   border-radius: 10px;
@@ -151,7 +151,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 #header .h-count {
   width: 30%;
