@@ -67,7 +67,15 @@
                     </div>
                 </div>
                 <main id="main">
-                    main
+                    <div class="recent">
+                        <span class="title"></span>
+                    </div>
+                    <div class="miniroom">
+                        <span class="title">미니룸</span>
+                        <p class="room-name">그나월드</p>
+                        <div class="">
+                        </div>
+                    </div>
                 </main>
             </div>
         </div>
@@ -81,11 +89,15 @@
                     <progress id="css" max="100" value="90"></progress>
                     <label for="js">JS,JQuery</label>
                     <progress id="js" max="100" value="75"></progress>
-                    <label for="graphic">PS, Illust</label>
+                    <label for="graphic">PS,AI</label>
                     <progress id="graphic" max="100" value="80"></progress>
                 </div>
                 <div class="symbol">
                     <span>마이심볼</span>
+                    <i data-symbol="ENFP!">🥳</i>
+                    <i data-symbol="열심">🔥</i>
+                    <i data-symbol="퍼블리싱">💻</i>
+                    <i data-symbol="창의적">🎨</i>
                 </div>
                 <div class="contact">
                     <a href="#">이력서</a>
@@ -93,7 +105,25 @@
                 </div>
             </div>
             <div class="music-player">
-                뮤직플레이어
+                <div class="title">
+                    <div class="marquee">
+                        <p>Ne-Yo - Because Of You</p>
+                    </div>
+                </div>
+                <audio>
+                    <source src="./audio/because_of_you.mp3">
+                </audio>
+                <div class="controler">
+                    <button type="button" class="pause">||</button>
+                    <button type="button" class="stop">■</button>
+                    <button type="button" class="prev">◀</button>
+                    <button type="button" class="next">▶</button>
+                    <div class="volume">
+                        <i></i>
+                        <input type="range" min="0" max="100" step="10" value="80">
+                    </div>
+                    <span>LIST</span>
+                </div>
             </div>
         </div>
     </div>

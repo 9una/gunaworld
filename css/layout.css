@@ -23,7 +23,7 @@
   height: calc(100% - 60px);
   background: #fff;
   position: absolute;
-  left: 30px;
+  left: 28px;
   top: 30px;
   border-radius: 8px;
   border: 2px solid #555;
@@ -133,17 +133,99 @@ nav li.active a {
 }
 #sideBox .side-box label {
   display: inline-block;
-  width: 55px;
+  width: 50px;
   margin-bottom: 5px;
   font-weight: bold;
+  font-size: 10px;
 }
 #sideBox .side-box progress {
   margin-left: auto;
   width: 100px;
   height: 13px;
 }
+#sideBox .side-box .symbol span {
+  font-weight: bold;
+  display: inline-block;
+  width: 50px;
+}
+#sideBox .side-box .symbol i {
+  margin-right: 3px;
+  position: relative;
+}
+#sideBox .side-box .symbol i:hover::after {
+  display: block;
+  content: attr(data-symbol);
+  text-align: center;
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background: #fff;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#sideBox .side-box .contact {
+  display: flex;
+}
+#sideBox .side-box .contact a {
+  text-align: center;
+  width: 50%;
+  position: relative;
+  font-weight: bold;
+}
+#sideBox .side-box .contact a:first-child::after {
+  content: "";
+  width: 1px;
+  height: 10px;
+  background: #999;
+  position: absolute;
+  right: 0;
+}
 #sideBox .music-player {
   background: #fff;
+}
+#sideBox .music-player .title {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 3px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+#sideBox .music-player .title .marquee p {
+  padding-left: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translate(0%);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+#sideBox .music-player .controler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#sideBox .music-player .controler .volume input {
+  width: 80px;
+  height: 10px;
+}
+#sideBox .music-player .controler span {
+  font-size: 8px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 2px 5px;
+  background: #dbdbdb;
+  color: #666;
 }
 
 /*# sourceMappingURL=layout.css.map */

@@ -53,11 +53,10 @@ a {
 }
 
 /* input 기본 스타일 초기화 */
-input:not([type="radio"]):not([type="checkbox"]):not([type="button"]) {
+input:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="range"]) {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border:1px solid blue;
 }
 input::-ms-clear { display: none; } /* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
 input[type='number']::-webkit-inner-spin-button,

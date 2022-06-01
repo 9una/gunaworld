@@ -25,7 +25,7 @@
         height:calc(100% - 60px);
         background:#fff;
         position:absolute;
-        left:30px;
+        left:28px;
         top:30px;
         border-radius:8px;
         border:2px solid #555;
@@ -124,22 +124,98 @@ nav {
             padding-bottom:8px;
             margin-bottom:8px;
         }
-        .side-state {
-        }
         label {
             display: inline-block;
-            width:55px;
+            width:50px;
             margin-bottom:5px;
             font-weight:bold;
+            font-size:10px;
         }
         progress {
             margin-left:auto;
             width:100px;
             height:13px;
         }
+        .symbol {
+            span {
+                font-weight:bold; 
+                display:inline-block; 
+                width:50px;
+            }
+            i {
+                margin-right:3px;
+                position:relative;
+                &:hover::after {
+                    display: block;
+                    content:attr(data-symbol);
+                    text-align: center;
+                    width:50px;
+                    height:20px;
+                    line-height:20px;
+                    font-size:10px;
+                    font-weight:bold;
+                    border:1px solid #999;
+                    border-radius:3px;
+                    background:#fff;
+                    position:absolute;
+                    bottom:-25px;
+                    left:50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        .contact {
+            display: flex;
+            a {
+                text-align: center;
+                width:50%;
+                position:relative;
+                font-weight:bold;
+                &:first-child::after {
+                    content:'';
+                    width:1px;
+                    height:10px;
+                    background:#999;
+                    position:absolute;
+                    right:0;
+                }
+            }
+        }
     }
     .music-player{
         background:#fff;
+        .title {
+            width:100%;
+            background:rgba(0, 0, 0, 0.05);
+            padding:3px;
+            overflow: hidden;
+            margin-bottom:5px;
+            .marquee {
+                p {
+                    padding-left:100%;
+                    display: inline-block;
+                    white-space: nowrap;
+                    animation: marquee 15s linear infinite;
+                }
+                @keyframes marquee {
+                    from {transform: translate(0%);}
+                    to {transform: translate(-100%);}
+                }
+            }
+        }
+        .controler {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .pause {}
+            .stop {}
+            .prev {}
+            .next {}
+            .volume {
+                input {width:80px; height:10px;}
+            }
+            span {font-size:8px; font-weight:bold; display: inline-block; padding:2px 5px; background:#dbdbdb; color:#666}
+        }
     }
 }
 
